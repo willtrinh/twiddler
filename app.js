@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  // Attach timeago.js to the DOM
+  jQuery("time.timeago").timeago();
+
   // Select already existing elements
   var $app = $('#app');
   $app.html('');
@@ -21,7 +24,7 @@ $(document).ready(function(){
       var $profilePhoto = $('<img class="profile-photo">').attr('src', tweet.profilePhotoURL);
       var $username = $('<span class="username"></span>').text('@' + tweet.user);
       var $message = $('<p class="message"></p>').text(tweet.message);
-      var $timestamp = $('<span class="timestamp"></span>').text(tweet.created_at);
+      var $timestamp = $('<span class="timestamp"></span>').text(jQuery.timeago(tweet.created_at));
       // Icons
       var $comment = $('<img class="icon comment">').attr('src', iconsPath);
       var $retweet = $('<img class="icon retweet">').attr('src', iconsPath);
