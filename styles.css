@@ -11,4 +11,19 @@ providing a space for you to apply styles to your app's outermost HTML element -
 #app {
   background-color: white;
   color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Icons Hover Effect */
+.comment:hover {
+  color: #4682b4;
+}
+.retweet:hover {
+  color: #17BF63;
+}
+.like:hover {
+  color: #E0245E;
+}
+.share:hover {
+  color: #ff5700;
 }
