@@ -3,27 +3,177 @@ html, body, #app {
   height: 100%;
   width: 100%;
   margin: 0;
+  background-color: #243447;
 }
 
 /* Continue building out the CSS styling for your Twiddler app below! We got you started by
 providing a space for you to apply styles to your app's outermost HTML element - the #app itself. */
 
 #app {
-  background-color: white;
-  color: black;
-  font-family: 'Roboto', sans-serif;
+  background-color: #243447;
+  color: #fff;
+  font-family: 'VT323', monospace;
+}
+/* HR */
+hr {
+  border: 1px solid #fff !important;
+}
+/* Links */
+a {
+  text-decoration: none !important;
+}
+/* Center */
+.center {
+  text-align: center;
 }
 
 /* Icons Hover Effect */
 .comment:hover {
+  transition: 0.3s;
   color: #4682b4;
 }
 .retweet:hover {
+  transition: 0.3s;
   color: #17BF63;
 }
 .like:hover {
+  transition: 0.3s;
   color: #E0245E;
 }
 .share:hover {
+  transition: 0.3s;
   color: #4682b4;
+}
+/* Header */
+.header {
+  text-align: center;
+  padding: 60px;
+  margin-top: 0;
+  color: white;
+  font-size: 40px;
+  font-family: 'Press Start 2P', cursive;
+  background-image: url("assets/img/background.jpg");
+  background-position: center;
+}
+.header:hover {
+  transition-duration: 0.3s;
+  color: #141d26;
+}
+
+/* Tweet */
+.tweet {
+  margin: 30px;
+  border: 1px solid;
+  border-radius: 12px;
+  box-shadow: 5px 5px #fff;
+  padding: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.tweet:hover {
+  transition: 0.5s;
+  box-shadow: 5px 5px #E0245E;
+}
+
+/* Profile Photos */
+.profile-photo {
+  border-radius: 50%;
+  float: left;
+  width: 64px;
+  height: auto;
+}
+/* Username */
+.username {
+  color: #fff;
+  float: left;
+  font-size: 25px;
+}
+.username:hover {
+  color: #E0245E;
+  transition: 0.3s;
+}
+/* Timestamp */
+.timestamp {
+  display: block;
+  float: right;
+  opacity: 0.5;
+  font-size: 20px;
+}
+.timestamp:hover {
+  color: #fff;
+  opacity: 1;
+  transition: 0.3s;
+}
+/* Message */
+.message {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+/* Icons */
+.icon {
+  display:inline-block;
+  font-size: 25px;
+  color:white;
+  width: 50px;
+  height: 25px;
+}
+/* Update Feed */
+#update-feed {
+  outline: none;
+  margin: 30px;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  color: #17BF63;
+  border: 3px solid #17BF63;
+  border-radius: 12px;
+  box-shadow: 3px 3px #17BF63;
+}
+#update-feed:hover {
+  color: white;
+  background-color: #17BF63;
+  transition: 0.5s;
+  box-shadow: none;
+}
+/* Friends List */
+#friends-list {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  margin: 30px;
+  border: 1px solid;
+  border-radius: 12px;
+  box-shadow: 5px 5px #E0245E;
+  color: #E0245E;
+  padding: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#friends {
+  list-style-type: none;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+
+}
+#friends-list:hover {
+  background-color: #E0245E;
+  color: #fff;
+  transition: 0.5s;
+  box-shadow: none;
+  border: none;
+}
+.friend:hover {
+  color: #000;
+  transition: 0.5s;
+}
+#friends-list hr {
+  border: 1px solid #E0245E !important;
+}
+#friends-list:hover hr {
+  border: 1px solid #fff !important;
 }
